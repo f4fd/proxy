@@ -1,0 +1,101 @@
+:root {
+    --accents: #8d0194;
+    --backgrounds: #8d0194;
+    --navbg: #8d0194;
+    --textcolor: #ce9dd1;
+    --outlines: #ce9dd1;
+    --hovers: #444;
+}
+
+.popup {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 575;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+#popup-top-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 0px 0px;
+}
+
+.x-button {
+    /*background: var(--outlines);*/
+    opacity: 40% !important;
+    color: var(--textcolor);
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    border-radius: 3px;
+    border: 2px solid var(--outlines);
+    font-weight: 700;
+    transition: 0.1s;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: var(--backgrounds);
+}
+
+.popup-footer {
+    position: absolute;
+    bottom: 5%;
+    /* adjust this value to move link up or down */
+    left: 50%;
+    /* center link horizontally */
+    transform: translateX(-50%);
+    /* center link horizontally */
+}
+
+.popup-footer button {
+    opacity: 40% !important;
+    color: var(--textcolor);
+    padding: 9px;
+    border-radius: 3px;
+    border: 2px solid var(--outlines);
+    font-weight: 700;
+    transition: 0.1s;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: var(--backgrounds);
+}
+
+.popup-box div button:hover {
+    opacity: 100% !important;
+}
+
+h2.popup-title {
+    text-align: center;
+}
+
+p.popup-text {}
+
+.popup-box {
+    width: 50%;
+    height: 55%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    padding: 20px 20px;
+    grid-template-rows: 1fr 7fr;
+    /* 10% for top bar with x, 90% for content */
+    border: 5px solid var(--outlines);
+    border-radius: 3px;
+    background-color: var(--backgrounds);
+    color: var(--textcolor);
+}
+
+.popup-top-wrapper {
+    text-align: right;
+}
